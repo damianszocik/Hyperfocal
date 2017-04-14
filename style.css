@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway|Lato|Roboto:400,600');
+@import url(http://weloveiconfonts.com/api/?family=iconicfill);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/*ikony*/
+[class*="iconicfill-"] {
+  font-family: 'IconicFill', sans-serif;
+}
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 2em;
+  color: #f22;
+}
+
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/background.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#center-container {
+    background-color: #fff;
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 40px #000;
+}
+
+form {
+    margin: 2em;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.input-label {
+    font-family: "Raleway", sans-serif;
+    color: #aaf;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-size: 0.7em;
+    margin-left: -3em;
+
+}
+
+select, input, button {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #aaa;
+    max-width: 100%;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #aaf;
+    border-radius: 50px;
+    padding: 1em;
+    transition: background 2s ease;
+}
+
+
+select:focus, input:focus {
+        border: 1px solid #aaf;
+        background: rgba(170, 170, 255, 0.1);
+        outline: none;
+}
+
+select {
+    width: 100%;
+    color: #aaa;
+    text-align-last: center;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    display: block;
+    width: initial;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+    padding: 1.2em 2em;
+    background: rgba(170, 170, 255, 1);
+    transition: 1s ease;
+}
+
+button:hover {
+    background: rgba(170, 170, 255, 0.6);
+}
+
+button:focus {
+    outline: none;
+}
+
+hr {
+    border: 1px dashed rgba(170, 170, 255, 0.4);
+    min-width: 100%;
+    margin: 0;
+}
+
+#logo {
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+    color: #aaf;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+/*Result*/
+
+.result {
+    position: absolute;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    background-color: rbga(255, 255, 255, 0);
+    opacity: 0;
+}
+
+.warning {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #f22;
+    font-weight: 400;
+    font-size: 0.35em;
+    text-transform: uppercase;
+    bottom: 0.8em;
+}
+
+
+
+
+/*Hide number input arrows*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/*Mobile*/
+
+@media (max-width: 576px) {
+
+    #logo {
+        margin: 1em 0em;
+    }
+
+    body {
+         margin: 0;
+         padding: 0;
+     }
+
+    #center-container {
+         width: 100vw;
+         height: 100vh;
+         justify-content: space-around;
+    }
