@@ -171,3 +171,47 @@ input[type="number"] {
          height: 100vh;
          justify-content: space-around;
     }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    body {
+         margin: 0;
+         padding: 0;
+     }
+
+    #center-container {
+         width: 100vw;
+         height: 100vh;
+         justify-content: space-around;
+    }        
+
+    #logo {
+        margin: 1em 0 0 0;
+    }
+
+    form > br {
+        display: none;
+    }
+
+    form input, select {
+        display: inline;
+        width: initial;
+        padding: 1em 0;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-label {
+        margin-right: 4em;
+        margin-top: 1em;
+    }
+
+
+    
+
+}
